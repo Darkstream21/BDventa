@@ -25,6 +25,8 @@
             TextBox1.Text = ""
             TextBox2.Text = ""
             TextBox1.Focus()
+            Me.Hide()
+            Form3.Show()
         Else
             TextBox1.Text = ""
             TextBox2.Text = ""

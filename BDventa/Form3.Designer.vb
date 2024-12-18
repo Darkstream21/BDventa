@@ -41,6 +41,22 @@ Partial Class Form3
         Me.ImagenPictureBox = New System.Windows.Forms.PictureBox()
         Me.IDTextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ProductosBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -56,22 +72,7 @@ Partial Class Form3
         Me.ProductosBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ProductosTableAdapter = New BDventa.TiendaDataSetTableAdapters.ProductosTableAdapter()
         Me.TableAdapterManager = New BDventa.TiendaDataSetTableAdapters.TableAdapterManager()
-        Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         IDLabel = New System.Windows.Forms.Label()
         CodigoLabel = New System.Windows.Forms.Label()
         ProductoLabel = New System.Windows.Forms.Label()
@@ -83,9 +84,9 @@ Partial Class Form3
         CType(Me.TiendaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ImagenPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ProductosBindingNavigator.SuspendLayout()
-        CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'IDLabel
@@ -222,6 +223,7 @@ Partial Class Form3
         Me.ImagenPictureBox.Location = New System.Drawing.Point(47, 30)
         Me.ImagenPictureBox.Name = "ImagenPictureBox"
         Me.ImagenPictureBox.Size = New System.Drawing.Size(100, 94)
+        Me.ImagenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.ImagenPictureBox.TabIndex = 13
         Me.ImagenPictureBox.TabStop = False
         '
@@ -253,6 +255,160 @@ Partial Class Form3
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Buscador:"
+        '
+        'Button9
+        '
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button9.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(424, 413)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(80, 52)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = ">|"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button8.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(338, 413)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(80, 52)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = ">"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button7.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(252, 413)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(80, 52)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "<"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button6.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(161, 413)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(80, 52)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "|<"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Location = New System.Drawing.Point(467, 342)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(80, 54)
+        Me.Button5.TabIndex = 6
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.Location = New System.Drawing.Point(377, 342)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(80, 54)
+        Me.Button4.TabIndex = 5
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.Location = New System.Drawing.Point(291, 342)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(80, 54)
+        Me.Button3.TabIndex = 4
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.Location = New System.Drawing.Point(205, 342)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(80, 54)
+        Me.Button2.TabIndex = 3
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.Location = New System.Drawing.Point(114, 342)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(80, 54)
+        Me.Button1.TabIndex = 2
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(6, 52)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(461, 31)
+        Me.TextBox1.TabIndex = 1
+        '
+        'ProductosDataGridView
+        '
+        Me.ProductosDataGridView.AutoGenerateColumns = False
+        Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
+        Me.ProductosDataGridView.Location = New System.Drawing.Point(6, 110)
+        Me.ProductosDataGridView.Name = "ProductosDataGridView"
+        Me.ProductosDataGridView.RowHeadersWidth = 51
+        Me.ProductosDataGridView.RowTemplate.Height = 24
+        Me.ProductosDataGridView.Size = New System.Drawing.Size(681, 220)
+        Me.ProductosDataGridView.TabIndex = 0
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Codigo"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Codigo"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Producto"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Producto"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 125
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Descripcion"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Descripcion"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 125
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Precio"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Precio"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 125
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Existencia"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Existencia"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 125
         '
         'ProductosBindingNavigator
         '
@@ -377,160 +533,11 @@ Partial Class Form3
         Me.TableAdapterManager.ProductosTableAdapter = Me.ProductosTableAdapter
         Me.TableAdapterManager.UpdateOrder = BDventa.TiendaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UsuariosTableAdapter = Nothing
+        Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ProductosDataGridView
+        'OpenFileDialog1
         '
-        Me.ProductosDataGridView.AutoGenerateColumns = False
-        Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
-        Me.ProductosDataGridView.Location = New System.Drawing.Point(6, 110)
-        Me.ProductosDataGridView.Name = "ProductosDataGridView"
-        Me.ProductosDataGridView.RowHeadersWidth = 51
-        Me.ProductosDataGridView.RowTemplate.Height = 24
-        Me.ProductosDataGridView.Size = New System.Drawing.Size(681, 220)
-        Me.ProductosDataGridView.TabIndex = 0
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Codigo"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Codigo"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Producto"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Producto"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 125
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Descripcion"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Descripcion"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 125
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Precio"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Precio"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 125
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Existencia"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Existencia"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 125
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(6, 52)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(461, 31)
-        Me.TextBox1.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(114, 342)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 54)
-        Me.Button1.TabIndex = 2
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(205, 342)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 54)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(291, 342)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(80, 54)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(377, 342)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(80, 54)
-        Me.Button4.TabIndex = 5
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Location = New System.Drawing.Point(467, 342)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(80, 54)
-        Me.Button5.TabIndex = 6
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button6.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(161, 413)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(80, 52)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "|<"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button7.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(252, 413)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(80, 52)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "<"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button8
-        '
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button8.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(338, 413)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(80, 52)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = ">"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.Button9.Font = New System.Drawing.Font("Nirmala UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(424, 413)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(80, 52)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = ">|"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Form3
         '
@@ -556,10 +563,10 @@ Partial Class Form3
         CType(Me.ImagenPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ProductosBindingNavigator.ResumeLayout(False)
         Me.ProductosBindingNavigator.PerformLayout()
-        CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -607,4 +614,5 @@ Partial Class Form3
     Friend WithEvents Button7 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
